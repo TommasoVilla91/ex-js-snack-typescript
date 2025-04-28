@@ -32,13 +32,13 @@ type Dipendente = {
 type Developer = Dipendente & {
   livelloEsperienza: "Junior" | "Mid" | "Senior",
   linguaggi?: string[],
-  certificazioni: string[] | undefined
+  certificazioni: string[]
 };
 
 type ProjectManager = Dipendente & {
   teamSize: number | null,
-      budgetGestito?: number,
-      stakeholderPrincipali: string[] | undefined
+  budgetGestito?: number,
+  stakeholderPrincipali: string[]
 };
 
 type Team = {
